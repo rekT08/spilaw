@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+:root {
+    --primary: #000000;
+    --bg: #f3f6f4e8;
+    --text: #000000;
+}
+
+body {
+  font-family: "Bricolage Grotesque", sans-serif;
+
+}
+
+.navbar {
+    background-color: #f3f6f4e8 !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.nav-icons {
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.hamburgerz {
+    display: block;
+    cursor: pointer;
+}
+
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 200px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.mobile-menu.show {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.hero {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-image: url(images/herolaw.avif);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+position: absolute;
+inset: 0;
+background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+    z-index: 2;
+    position: relative;
+}
+
+
+.hero h1 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.hero p {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.hero-btn {
+    background-color: var(--bg);
+    color: black;
+    padding: 10px 35px;
+    margin: 0 auto;
+  font-family: "Bricolage Grotesque", sans-serif;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 30px;
+    gap: 50px;
+    margin-top: -50px;
+}
+
+.profiles {
+    background-color: rgb(38, 92, 46);
+    color: white;
+
+}
+
+.profiles h2,
+.profiles h3,
+.profiles p {
+    color: white;
+}
+
+
+.profiles h2 {
+    font-weight: 700;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+.profile-container {
+    padding: 20px;
+}
+
+.profile-card img {
+    width: 300px;
+    height: 400px;
+}
+
+.profile-card h3 {
+    font-weight: 700;
+}
+
+.bio {
+    font-size: 18px;
+    text-align: justify;
+    max-width: 900px;
+    margin-bottom: 10px;
+}
+
+.position {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: -12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about-content {
+    text-align: center;
+    max-width: 800px;
+}
+
+.about-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.about-content h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.mission-content {
+    text-align: center;
+    max-width: 800px;
+}
+
+.mission-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.mission-content h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.aims-content {
+    text-align: center;
+    max-width: 800px;
+}
+
+.aims-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.aims-content h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.membership {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 30px;
+    gap: 50px;
+    margin-top: -50px;
+}
+
+.membership-content {
+    text-align: center;
+    max-width: 800px;
+}
+
+.membership-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.membership-content h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-content p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #727070;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+.footer-icons {
+    padding-top: 40px;
+}
+
+.footer-form h3 {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .nav-icons {
+        display: none;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+
+    .footer-content {
+        margin-bottom: 30px;
+    }
+
+    .footer-bottom {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .footer-form h3 {
+        justify-content: center;
+        justify-self: center;
+        margin-bottom: 30px;
+    }
+
+    .footer-icons {
+        justify-self: center;
+    }
+
+    .hero p {
+        max-width: 400px;
+        text-align: center;
+    }
+
+
+    .hero-btn {
+        font-size: 18px;
+    }
+
+
+}
