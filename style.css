@@ -186,6 +186,7 @@ background: rgba(0, 0, 0, 0.3);
     text-align: justify;
     max-width: 900px;
     margin-bottom: 10px;
+    line-height: 1.6;
 }
 
 .position {
@@ -359,6 +360,11 @@ background: rgba(0, 0, 0, 0.3);
 
     .hero-btn {
         font-size: 18px;
+    }
+
+    .bio {
+        text-align: left;
+        margin-left: 25px;
     }
 
 
