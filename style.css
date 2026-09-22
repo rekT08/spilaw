@@ -93,7 +93,7 @@ body {
 .overlay {
 position: absolute;
 inset: 0;
-background: rgba(0, 0, 0, 0.3);
+background: rgba(0, 0, 0, 0.1);
 }
 
 .hero-content {
@@ -361,6 +361,16 @@ background: rgba(0, 0, 0, 0.3);
     .footer-icons {
         justify-self: center;
     }
+
+
+    .hero {
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        background-image: url(images/spilaw-mobile.avif);
+    }
+
 
     .hero p {
         max-width: 400px;
