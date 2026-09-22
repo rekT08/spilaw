@@ -27,112 +27,112 @@ hamburger.addEventListener('click', () => {
     mobileMenu.classList.toggle('show');
 });
 
-const articles = [
+// const articles = [
 
-    {
-        title: "The Rise of Afrobeats",
-        category: "Music",
-        author: "Ashriel Jones",
-        image: "images/rapper.avif"
-    },
+//     {
+//         title: "The Rise of Afrobeats",
+//         category: "Music",
+//         author: "Ashriel Jones",
+//         image: "images/rapper.avif"
+//     },
 
-    {
-        title: "Why Football Is Changing",
-        category: "Sports",
-        author: "Archangel M.",
-        image: "images/football.avif"
-    },
+//     {
+//         title: "Why Football Is Changing",
+//         category: "Sports",
+//         author: "Archangel M.",
+//         image: "images/football.avif"
+//     },
 
-    {
-        title: "Inside Modern Street Culture",
-        category: "Culture",
-        author: "Alex Smith",
-        image: "images/culture.avif"
-    }
+//     {
+//         title: "Inside Modern Street Culture",
+//         category: "Culture",
+//         author: "Alex Smith",
+//         image: "images/culture.avif"
+//     }
 
-];
+// ];
 
-const articleContainer = document.querySelector(".article-container");
+// const articleContainer = document.querySelector(".article-container");
 
-articles.forEach(article => {
+// articles.forEach(article => {
 
-    const card = document.createElement("article");
+//     const card = document.createElement("article");
 
-    card.classList.add("article-card");
+//     card.classList.add("article-card");
 
-    card.innerHTML = `
-        <img src="${article.image}" alt="${article.title}">
+//     card.innerHTML = `
+//         <img src="${article.image}" alt="${article.title}">
 
-        <div class="article-info">
+//         <div class="article-info">
 
-            <div class="article-category">
-                ${article.category}
-            </div>
+//             <div class="article-category">
+//                 ${article.category}
+//             </div>
 
-            <h3 class="article-title">
-                ${article.title}
-            </h3>
+//             <h3 class="article-title">
+//                 ${article.title}
+//             </h3>
 
-            <p class="article-author">
-                By ${article.author}
-            </p>
+//             <p class="article-author">
+//                 By ${article.author}
+//             </p>
 
-        </div>
-    `;
+//         </div>
+//     `;
 
-    articleContainer.appendChild(card);
+//     articleContainer.appendChild(card);
 
-});
-
-
-let currentArticle = 0;
-
-const featuredImage = document.querySelector("#featuredImage");
-const featuredTitle = document.querySelector("#featuredTitle");
-const featuredCategory = document.querySelector("#featuredCategory");
-const featuredAuthor = document.querySelector("#featuredAuthor");
-
-function showArticle(index) {
-
-    const article = articles[index];
-
-    featuredImage.src = article.image;
-    featuredImage.alt = article.title;
-
-    featuredTitle.textContent = article.title;
-
-    featuredCategory.textContent = article.category;
-
-    featuredAuthor.textContent = `By ${article.author}`;
-
-}
-showArticle(currentArticle);
-
-const nextButton = document.querySelector("#next");
-const previousButton = document.querySelector("#previous");
+// });
 
 
-nextButton.addEventListener("click", () => {
+// let currentArticle = 0;
 
-    currentArticle++;
+// const featuredImage = document.querySelector("#featuredImage");
+// const featuredTitle = document.querySelector("#featuredTitle");
+// const featuredCategory = document.querySelector("#featuredCategory");
+// const featuredAuthor = document.querySelector("#featuredAuthor");
 
-    if (currentArticle >= articles.length) {
-        currentArticle = 0;
-    }
+// function showArticle(index) {
 
-    showArticle(currentArticle);
+//     const article = articles[index];
 
-});
+//     featuredImage.src = article.image;
+//     featuredImage.alt = article.title;
+
+//     featuredTitle.textContent = article.title;
+
+//     featuredCategory.textContent = article.category;
+
+//     featuredAuthor.textContent = `By ${article.author}`;
+
+// }
+// showArticle(currentArticle);
+
+// const nextButton = document.querySelector("#next");
+// const previousButton = document.querySelector("#previous");
 
 
-previousButton.addEventListener("click", () => {
+// nextButton.addEventListener("click", () => {
 
-    currentArticle--;
+//     currentArticle++;
 
-    if (currentArticle < 0) {
-        currentArticle = articles.length - 1;
-    }
+//     if (currentArticle >= articles.length) {
+//         currentArticle = 0;
+//     }
 
-    showArticle(currentArticle);
+//     showArticle(currentArticle);
 
-});
+// });
+
+
+// previousButton.addEventListener("click", () => {
+
+//     currentArticle--;
+
+//     if (currentArticle < 0) {
+//         currentArticle = articles.length - 1;
+//     }
+
+//     showArticle(currentArticle);
+
+// });
