@@ -368,7 +368,9 @@ background: rgba(0, 0, 0, 0.3);
     }
 
     .hero {
-        background-position: 50% 30%;
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .hero-btn {
