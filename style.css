@@ -145,6 +145,7 @@ background: rgba(0, 0, 0, 0.1);
     color: white;
 }
 
+
 .profiles {
     background-color: rgb(38, 92, 46);
     color: white;
@@ -178,8 +179,8 @@ background: rgba(0, 0, 0, 0.1);
 }
 
 .profile-card img {
-    width: 350px;
-    height: 400px;
+    width: 270px;
+    height: 300px;
 }
 
 .profile-card h3 {
@@ -199,24 +200,6 @@ background: rgba(0, 0, 0, 0.1);
     font-weight: bold;
     margin-top: -12px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .about-content {
     text-align: center;
@@ -271,8 +254,8 @@ background: rgba(0, 0, 0, 0.1);
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 100px 30px;
-    gap: 50px;
+    padding: 20px 30px;
+    margin-top: -60px;
     background-color: rgb(38, 92, 46);
     color: white;
 }
@@ -299,12 +282,80 @@ background: rgba(0, 0, 0, 0.1);
     align-items: center;
     justify-content: center;
     padding: 100px 30px;
-    margin-top: -120px;
     gap: 50px;
     background-color: rgb(40, 46, 40);
     color: white;
 }
 
+.press-releases {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 30px;
+    gap: 30px;
+    background-color: rgb(38, 92, 46);
+    color: white;
+}
+
+.press-content {
+    text-align: center;
+    max-width: 800px;
+}
+
+.press-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.press-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+
+.press-list {
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+.press-list p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.press-title {
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+.press-title h2 {
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.press-title p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.press-subdiv h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
 
 
@@ -385,5 +436,20 @@ background: rgba(0, 0, 0, 0.1);
         text-align: center;
     }
 
+    .about-content p {
+        text-align: left;
+    }
+
+    .mission-content p {
+        text-align: left;
+    }
+
+    .aims-content p {
+        text-align: left;
+    }
+
+    .membership-content p {
+        text-align: left;
+    }
 
 }
